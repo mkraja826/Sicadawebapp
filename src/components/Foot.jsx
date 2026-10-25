@@ -19,8 +19,8 @@ function Foot() {
 
   return (
     <footer className="bg-slate-950 text-slate-300 border-t border-white/10">
-      <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-16 lg:py-20">
-        <div className="grid md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-10">
+      <div className="max-w-[1440px] mx-auto px-5 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-20">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-10">
           <div className="lg:col-span-4">
             <p className="text-white text-2xl font-semibold tracking-tight">SICADA DIGITAL</p>
             <p className="mt-5 text-slate-400 leading-relaxed max-w-md">
@@ -35,7 +35,7 @@ function Foot() {
             <h3 className="text-white font-semibold mb-5">AI Solutions</h3>
             <ul className="space-y-3 text-slate-400 text-sm">
               {aiLinks.map(([label, href]) => (
-                <li key={label}><a href={href} className="hover:text-white transition-colors">{label}</a></li>
+                <li key={label}><a href={href} className="inline-block py-1 hover:text-white focus-visible:text-white transition-colors">{label}</a></li>
               ))}
             </ul>
           </div>
@@ -44,7 +44,7 @@ function Foot() {
             <h3 className="text-white font-semibold mb-5">Engineering</h3>
             <ul className="space-y-3 text-slate-400 text-sm">
               {engineeringLinks.map(([label, href]) => (
-                <li key={label}><a href={href} className="hover:text-white transition-colors">{label}</a></li>
+                <li key={label}><a href={href} className="inline-block py-1 hover:text-white focus-visible:text-white transition-colors">{label}</a></li>
               ))}
             </ul>
           </div>
@@ -52,12 +52,12 @@ function Foot() {
           <div className="lg:col-span-2">
             <h3 className="text-white font-semibold mb-5">Company</h3>
             <ul className="space-y-3 text-slate-400 text-sm">
-              <li><a href="/products" className="hover:text-white transition-colors">Products</a></li>
-              <li><a href="/case-studies" className="hover:text-white transition-colors">Case Studies</a></li>
-              <li><a href="/insights" className="hover:text-white transition-colors">Insights</a></li>
-              <li><a href="/about" className="hover:text-white transition-colors">About</a></li>
-              <li><a href="/careers" className="hover:text-white transition-colors">Careers</a></li>
-              <li><a href="/contact" className="hover:text-white transition-colors">Contact</a></li>
+              <li><a href="/products" className="inline-block py-1 hover:text-white focus-visible:text-white transition-colors">Products</a></li>
+              <li><a href="/case-studies" className="inline-block py-1 hover:text-white focus-visible:text-white transition-colors">Case Studies</a></li>
+              <li><a href="/insights" className="inline-block py-1 hover:text-white focus-visible:text-white transition-colors">Insights</a></li>
+              <li><a href="/about" className="inline-block py-1 hover:text-white focus-visible:text-white transition-colors">About</a></li>
+              <li><a href="/careers" className="inline-block py-1 hover:text-white focus-visible:text-white transition-colors">Careers</a></li>
+              <li><a href="/contact" className="inline-block py-1 hover:text-white focus-visible:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
 
@@ -82,9 +82,9 @@ function Foot() {
 
         <div className="border-t border-white/10 mt-14 pt-8 flex flex-col md:flex-row justify-between gap-5 text-sm text-slate-500">
           <p>© 2026 Sicada Digital. All rights reserved.</p>
-          <div className="flex flex-wrap gap-6">
-            <a href="#" className="hover:text-white transition-colors">Privacy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms</a>
+          <div className="flex flex-wrap gap-4 sm:gap-6">
+            <a href="#" className="inline-block py-1 hover:text-white focus-visible:text-white transition-colors">Privacy</a>
+            <a href="#" className="inline-block py-1 hover:text-white focus-visible:text-white transition-colors">Terms</a>
           </div>
         </div>
       </div>
