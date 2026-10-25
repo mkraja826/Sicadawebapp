@@ -41,8 +41,10 @@ function Navbar() {
 
         <button
           onClick={() => setOpen(!open)}
-          className="xl:hidden border border-slate-300 p-2 text-slate-900"
-          aria-label="Toggle navigation"
+          className="xl:hidden border border-slate-300 p-2 text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+          type="button"
+          aria-label={open ? "Close navigation" : "Open navigation"}
+          aria-controls="sicada-mobile-navigation"
           aria-expanded={open}
         >
           {open ? <X size={24} /> : <Menu size={24} />}
@@ -50,14 +52,14 @@ function Navbar() {
       </div>
 
       {open && (
-        <div className="xl:hidden bg-white border-t border-slate-200 px-6 py-7 shadow-lg">
-          <nav className="flex flex-col gap-5 text-base font-medium text-slate-800">
+        <div id="sicada-mobile-navigation" className="xl:hidden bg-white border-t border-slate-200 px-6 py-5 shadow-lg max-h-[calc(100dvh-76px)] overflow-y-auto overscroll-contain">
+          <nav aria-label="Mobile navigation" className="flex flex-col gap-1 text-base font-medium text-slate-800">
             {links.map((link) => (
-              <a key={link.name} href={link.href} onClick={() => setOpen(false)} className="hover:text-blue-700">
+              <a key={link.name} href={link.href} onClick={() => setOpen(false)} className="block py-3 hover:text-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-600">
                 {link.name}
               </a>
             ))}
-            <a href="/contact" onClick={() => setOpen(false)} className="mt-2 bg-blue-600 text-white px-5 py-3 text-center font-semibold">
+            <a href="/contact" onClick={() => setOpen(false)} className="mt-3 bg-blue-600 text-white px-5 py-3 text-center font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
               Talk to our team
             </a>
           </nav>
