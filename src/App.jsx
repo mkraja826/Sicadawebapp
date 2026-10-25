@@ -11,6 +11,7 @@ import AdminLogin from "./pages/AdminLogin";
 import Foot from "./components/Foot";
 import Navbar from "./components/Navbar";
 import SicadaChat from "./components/SicadaChat";
+import PageMetadata from "./components/PageMetadata";
 import Industries from "./pages/Industries";
 import CaseStudies from "./pages/CaseStudies";
 import Insights from "./pages/Insights";
@@ -18,6 +19,7 @@ import Insights from "./pages/Insights";
 function App() {
   return (
     <BrowserRouter>
+      <PageMetadata />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
