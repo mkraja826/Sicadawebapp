@@ -33,7 +33,8 @@ export default {
         url.pathname = path;
         return Response.redirect(url.toString(), 301);
       }
-      const indexUrl = new URL("/index.html", url);
+      // Fetch the canonical root asset: Cloudflare may redirect /index.html to /.
+      const indexUrl = new URL("/", url);
       const response = await env.ASSETS.fetch(new Request(indexUrl.toString(), { method: "GET" }));
       if (!response.ok) return response;
       const meta = META[path];
