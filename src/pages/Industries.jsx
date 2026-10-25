@@ -69,7 +69,7 @@ export default function Industries() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-20 lg:py-28 grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-8">
             <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Industries</p>
-            <h1 className="mt-6 text-5xl sm:text-6xl lg:text-[4.7rem] leading-[1.03] tracking-[-0.045em] font-semibold">
+            <h1 className="mt-6 text-[clamp(2.3rem,9.5vw,2.85rem)] sm:text-6xl lg:text-[4.7rem] leading-[1.03] tracking-[-0.045em] font-semibold">
               AI engineered around real industry workflows.
             </h1>
             <p className="mt-7 text-xl lg:text-[1.3rem] leading-relaxed text-slate-600 max-w-3xl">
@@ -93,7 +93,7 @@ export default function Industries() {
           <div className="grid lg:grid-cols-12 gap-10 items-end">
             <div className="lg:col-span-7">
               <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Industry solutions</p>
-              <h2 className="mt-5 text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Use cases that connect AI to measurable operations.</h2>
+              <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Use cases that connect AI to measurable operations.</h2>
             </div>
             <p className="lg:col-span-5 text-lg text-slate-600 leading-relaxed">We avoid generic AI claims. Each solution is shaped around the information, decisions and workflows that matter inside the industry.</p>
           </div>
@@ -122,7 +122,7 @@ export default function Industries() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-14">
           <div className="lg:col-span-5">
             <p className="text-sm font-semibold text-blue-400 uppercase tracking-wide">Industry transformation</p>
-            <h2 className="mt-5 text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-tight">Modernize the system without losing the business context.</h2>
+            <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-tight">Modernize the system without losing the business context.</h2>
             <p className="mt-6 text-lg text-slate-300 leading-relaxed">AI becomes valuable when it improves a real process, decision or customer experience. Sicada combines domain understanding with technical architecture to get there.</p>
           </div>
           <div className="lg:col-span-7 border border-white/10">
@@ -145,7 +145,7 @@ export default function Industries() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
             <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Cross-industry capabilities</p>
-            <h2 className="mt-5 text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Common AI patterns. Adapted to different businesses.</h2>
+            <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Common AI patterns. Adapted to different businesses.</h2>
           </div>
           <div className="lg:col-span-7 grid sm:grid-cols-2 gap-x-10">
             {["Enterprise copilots", "RAG and knowledge systems", "AI CRM and ERP", "Predictive analytics", "Document intelligence", "Computer vision", "Workflow automation", "AI-assisted cybersecurity"].map((item) => (
@@ -161,7 +161,7 @@ export default function Industries() {
       <section className="bg-blue-600 text-white">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-16 lg:py-20 grid lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-8">
-            <h2 className="text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Have an industry workflow that could benefit from AI?</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Have an industry workflow that could benefit from AI?</h2>
             <p className="mt-4 text-lg text-blue-50 max-w-3xl">Tell us how the business works today. We can help identify where AI, ML or intelligent software could create useful change.</p>
           </div>
           <div className="lg:col-span-4 lg:text-right">
