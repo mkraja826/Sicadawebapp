@@ -158,3 +158,16 @@ textarea:focus-visible {
     line-height: 1.4;
   }
 }
+
+/* Keep anchor targets visible below the sticky navigation. */
+[id] { scroll-margin-top: 6rem; }
+
+/* Prevent oversized form content from forcing horizontal scrolling. */
+input, select, textarea { max-width: 100%; }
+
+/* Improve focus visibility across both light and dark surfaces. */
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 3px;
+}
