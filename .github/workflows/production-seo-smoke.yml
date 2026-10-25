@@ -1,0 +1,46 @@
+name: Sicada Production SEO Smoke Test
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 5 * * 1'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify production redirects and route status
+        shell: bash
+        run: |
+          set -euo pipefail
+          base="https://sicadadigital.com"
+          status() { curl --silent --show-error --max-time 20 --output /dev/null --write-out '%{http_code}' "$1"; }
+          location() { curl --silent --show-error --max-time 20 --head "$1" | tr -d '\r' | grep -i '^location:' | head -n 1 | cut -d' ' -f2-; }
+          for path in / /products /services /industries /case-studies /insights /about /careers /contact; do
+            code=$(status "$base$path")
+            echo "$path: $code"
+            test "$code" = 200
+          done
+          for path in /seo-nonexistent-check-2026 /index.html /index.php; do
+            code=$(status "$base$path")
+            echo "$path: $code"
+            case "$path" in
+              /seo-nonexistent-check-2026) test "$code" = 404 ;;
+              *) test "$code" = 301 ;;
+            esac
+          done
+          for url in http://sicadadigital.com/ https://www.sicadadigital.com/; do
+            code=$(status "$url")
+            echo "$url: $code"
+            test "$code" = 301
+            target=$(location "$url")
+            test "$target" = "https://sicadadigital.com/"
+          done
+      - name: Verify initial HTML has unique metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          for path in / /products /services /industries /case-studies /insights /about /careers /contact; do
+            html=$(curl --silent --show-error --fail --max-time 20 "https://sicadadigital.com$path")
+            canonical="https://sicadadigital.com$path"
+            echo "$html" | grep -Fq "rel=\"canonical\" href=\"$canonical\""
+            echo "$html" | grep -Eq '<title>[^<]+</title>'
+          done
