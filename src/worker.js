@@ -34,7 +34,7 @@ export default {
         return Response.redirect(url.toString(), 301);
       }
       const indexUrl = new URL("/index.html", url);
-      const response = await env.ASSETS.fetch(new Request(indexUrl, request));
+      const response = await env.ASSETS.fetch(new Request(indexUrl.toString(), { method: "GET" }));
       if (!response.ok) return response;
       const meta = META[path];
       const canonical = "https://sicadadigital.com" + path;
