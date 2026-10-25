@@ -61,7 +61,7 @@ export default function Contact() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-20 lg:py-28 grid lg:grid-cols-12 gap-14 items-end">
           <div className="lg:col-span-8">
             <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Contact Sicada</p>
-            <h1 className="mt-6 text-5xl sm:text-6xl lg:text-[4.7rem] leading-[1.03] tracking-[-0.045em] font-semibold max-w-5xl">
+            <h1 className="mt-6 text-[clamp(2.3rem,9.5vw,2.85rem)] sm:text-6xl lg:text-[4.7rem] leading-[1.03] tracking-[-0.045em] font-semibold max-w-5xl">
               Start with the business problem. We&apos;ll help define the AI path.
             </h1>
             <p className="mt-7 text-xl lg:text-[1.3rem] leading-relaxed text-slate-600 max-w-3xl">
@@ -104,7 +104,7 @@ export default function Contact() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-14">
           <div className="lg:col-span-4">
             <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Project enquiry</p>
-            <h2 className="mt-5 text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-tight">Tell us what you&apos;re trying to change.</h2>
+            <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-tight">Tell us what you&apos;re trying to change.</h2>
             <p className="mt-6 text-lg text-slate-600 leading-relaxed">You don&apos;t need a finished technical specification. Share the current workflow, the opportunity or the problem you want to solve.</p>
             <div className="mt-10 space-y-5">
               {[
@@ -140,7 +140,7 @@ export default function Contact() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-14">
           <div className="lg:col-span-5">
             <p className="text-sm font-semibold text-blue-400 uppercase tracking-wide">What happens next</p>
-            <h2 className="mt-5 text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">A useful first conversation, not a sales script.</h2>
+            <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">A useful first conversation, not a sales script.</h2>
           </div>
           <div className="lg:col-span-7 border border-white/10">
             {[
