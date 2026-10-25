@@ -58,13 +58,13 @@ export default function Contact() {
   return (
     <main className="min-h-screen bg-white text-slate-950">
       <section className="border-b border-slate-200">
-        <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-20 lg:py-28 grid lg:grid-cols-12 gap-14 items-end">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-28 grid lg:grid-cols-12 gap-14 items-end">
           <div className="lg:col-span-8">
             <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Contact Sicada</p>
-            <h1 className="mt-6 text-[clamp(2.3rem,9.5vw,2.85rem)] sm:text-6xl lg:text-[4.7rem] leading-[1.03] tracking-[-0.045em] font-semibold max-w-5xl">
+            <h1 className="mt-6 text-[clamp(2.25rem,9vw,3.2rem)] sm:text-6xl lg:text-[4.7rem] leading-[1.03] tracking-[-0.045em] font-semibold max-w-5xl">
               Start with the business problem. We&apos;ll help define the AI path.
             </h1>
-            <p className="mt-7 text-xl lg:text-[1.3rem] leading-relaxed text-slate-600 max-w-3xl">
+            <p className="mt-7 text-base sm:text-lg lg:text-[1.3rem] leading-relaxed text-slate-600 max-w-3xl">
               Talk to Sicada about AI-native applications, AI CRM and ERP, machine learning, LLM systems, enterprise automation, cybersecurity or modernization of existing software.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
@@ -84,7 +84,7 @@ export default function Contact() {
       </section>
 
       <section className="bg-slate-50 border-b border-slate-200 py-16">
-        <div className="max-w-[1440px] mx-auto px-6 lg:px-10 grid md:grid-cols-2 lg:grid-cols-4 border-t border-l border-slate-300">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-6 lg:px-10 grid md:grid-cols-2 lg:grid-cols-4 border-t border-l border-slate-300">
           {[
             [Mail, "Email", "Hr@sicadadigital.com"],
             [Phone, "Phone", "+916301469938"],
@@ -94,17 +94,17 @@ export default function Contact() {
             <div key={title} className="bg-white border-r border-b border-slate-300 p-7 lg:p-8">
               <Icon className="text-blue-600" size={28} />
               <p className="mt-7 text-sm font-semibold text-slate-500 uppercase tracking-wide">{title}</p>
-              <p className="mt-2 text-lg font-medium">{text}</p>
+              <p className="mt-2 text-base sm:text-lg font-medium break-words">{text}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section id="contact-form" className="py-24 lg:py-32 bg-white">
-        <div className="max-w-[1440px] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-14">
+      <section id="contact-form" className="py-14 sm:py-20 lg:py-32 bg-white">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-6 lg:px-10 grid lg:grid-cols-12 gap-14">
           <div className="lg:col-span-4">
             <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Project enquiry</p>
-            <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-tight">Tell us what you&apos;re trying to change.</h2>
+            <h2 className="mt-5 text-[clamp(1.875rem,5vw,3rem)] lg:text-5xl font-semibold tracking-[-0.03em] leading-tight">Tell us what you&apos;re trying to change.</h2>
             <p className="mt-6 text-lg text-slate-600 leading-relaxed">You don&apos;t need a finished technical specification. Share the current workflow, the opportunity or the problem you want to solve.</p>
             <div className="mt-10 space-y-5">
               {[
@@ -117,16 +117,16 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="lg:col-span-8 bg-slate-50 border border-slate-300 p-7 sm:p-10 lg:p-12">
-            <form onSubmit={handleSubmit} className="grid sm:grid-cols-2 gap-6">
-              <label className="block"><span className="block text-sm font-semibold mb-2">First name</span><input type="text" name="firstName" value={formData.firstName} onChange={handleChange} className="w-full bg-white border border-slate-300 px-4 py-4" required /></label>
-              <label className="block"><span className="block text-sm font-semibold mb-2">Last name</span><input type="text" name="lastName" value={formData.lastName} onChange={handleChange} className="w-full bg-white border border-slate-300 px-4 py-4" required /></label>
-              <label className="block"><span className="block text-sm font-semibold mb-2">Work email</span><input type="email" name="email" value={formData.email} onChange={handleChange} className="w-full bg-white border border-slate-300 px-4 py-4" required /></label>
-              <label className="block"><span className="block text-sm font-semibold mb-2">Phone</span><input type="tel" name="phone" value={formData.phone} onChange={handleChange} className="w-full bg-white border border-slate-300 px-4 py-4" /></label>
-              <label className="block sm:col-span-2"><span className="block text-sm font-semibold mb-2">Company</span><input type="text" name="company" value={formData.company} onChange={handleChange} className="w-full bg-white border border-slate-300 px-4 py-4" /></label>
-              <label className="block"><span className="block text-sm font-semibold mb-2">What are you exploring?</span><select name="serviceNeeded" value={formData.serviceNeeded} onChange={handleChange} className="w-full bg-white border border-slate-300 px-4 py-4" required><option value="">Select an area</option><option value="AI / LLM Application">AI / LLM Application</option><option value="AI CRM">AI CRM</option><option value="AI ERP">AI ERP</option><option value="Machine Learning">Machine Learning</option><option value="RAG / Enterprise Knowledge">RAG / Enterprise Knowledge</option><option value="AI Agents / Automation">AI Agents / Automation</option><option value="AI Cybersecurity">AI Cybersecurity</option><option value="Existing Software + AI">Existing Software + AI</option><option value="Cloud / Data Engineering">Cloud / Data Engineering</option><option value="Consultation">Not sure yet / Consultation</option></select></label>
-              <label className="block"><span className="block text-sm font-semibold mb-2">Estimated budget</span><select name="budget" value={formData.budget} onChange={handleChange} className="w-full bg-white border border-slate-300 px-4 py-4"><option value="">Select if known</option><option value="Under $5,000">Under $5,000</option><option value="$5,000 - $15,000">$5,000 - $15,000</option><option value="$15,000 - $50,000">$15,000 - $50,000</option><option value="$50,000+">$50,000+</option><option value="Not sure yet">Not sure yet</option></select></label>
-              <label className="block sm:col-span-2"><span className="block text-sm font-semibold mb-2">Business problem / project context</span><textarea name="message" value={formData.message} onChange={handleChange} rows="7" placeholder="Describe the current process, challenge, users, systems involved or the outcome you want to achieve." className="w-full bg-white border border-slate-300 px-4 py-4" required /></label>
+          <div className="lg:col-span-8 min-w-0 bg-slate-50 border border-slate-300 p-5 sm:p-10 lg:p-12">
+            <form onSubmit={handleSubmit} className="grid min-w-0 sm:grid-cols-2 gap-6">
+              <label className="block"><span className="block text-sm font-semibold mb-2">First name</span><input type="text" name="firstName" value={formData.firstName} onChange={handleChange} className="w-full min-w-0 bg-white border border-slate-300 px-4 py-3 sm:py-4 focus-visible:border-blue-600" required /></label>
+              <label className="block"><span className="block text-sm font-semibold mb-2">Last name</span><input type="text" name="lastName" value={formData.lastName} onChange={handleChange} className="w-full min-w-0 bg-white border border-slate-300 px-4 py-3 sm:py-4 focus-visible:border-blue-600" required /></label>
+              <label className="block"><span className="block text-sm font-semibold mb-2">Work email</span><input type="email" name="email" value={formData.email} onChange={handleChange} className="w-full min-w-0 bg-white border border-slate-300 px-4 py-3 sm:py-4 focus-visible:border-blue-600" required /></label>
+              <label className="block"><span className="block text-sm font-semibold mb-2">Phone</span><input type="tel" name="phone" value={formData.phone} onChange={handleChange} className="w-full min-w-0 bg-white border border-slate-300 px-4 py-3 sm:py-4 focus-visible:border-blue-600" /></label>
+              <label className="block sm:col-span-2"><span className="block text-sm font-semibold mb-2">Company</span><input type="text" name="company" value={formData.company} onChange={handleChange} className="w-full min-w-0 bg-white border border-slate-300 px-4 py-3 sm:py-4 focus-visible:border-blue-600" /></label>
+              <label className="block"><span className="block text-sm font-semibold mb-2">What are you exploring?</span><select name="serviceNeeded" value={formData.serviceNeeded} onChange={handleChange} className="w-full min-w-0 bg-white border border-slate-300 px-4 py-3 sm:py-4 focus-visible:border-blue-600" required><option value="">Select an area</option><option value="AI / LLM Application">AI / LLM Application</option><option value="AI CRM">AI CRM</option><option value="AI ERP">AI ERP</option><option value="Machine Learning">Machine Learning</option><option value="RAG / Enterprise Knowledge">RAG / Enterprise Knowledge</option><option value="AI Agents / Automation">AI Agents / Automation</option><option value="AI Cybersecurity">AI Cybersecurity</option><option value="Existing Software + AI">Existing Software + AI</option><option value="Cloud / Data Engineering">Cloud / Data Engineering</option><option value="Consultation">Not sure yet / Consultation</option></select></label>
+              <label className="block"><span className="block text-sm font-semibold mb-2">Estimated budget</span><select name="budget" value={formData.budget} onChange={handleChange} className="w-full min-w-0 bg-white border border-slate-300 px-4 py-3 sm:py-4 focus-visible:border-blue-600"><option value="">Select if known</option><option value="Under $5,000">Under $5,000</option><option value="$5,000 - $15,000">$5,000 - $15,000</option><option value="$15,000 - $50,000">$15,000 - $50,000</option><option value="$50,000+">$50,000+</option><option value="Not sure yet">Not sure yet</option></select></label>
+              <label className="block sm:col-span-2"><span className="block text-sm font-semibold mb-2">Business problem / project context</span><textarea name="message" value={formData.message} onChange={handleChange} rows="7" placeholder="Describe the current process, challenge, users, systems involved or the outcome you want to achieve." className="w-full min-w-0 bg-white border border-slate-300 px-4 py-3 sm:py-4 focus-visible:border-blue-600" required /></label>
               <div className="sm:col-span-2 flex flex-col sm:flex-row gap-5 sm:items-center">
                 <button type="submit" disabled={loading} className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 font-semibold disabled:opacity-60"><Send size={18} />{loading ? "Submitting..." : "Submit enquiry"}</button>
                 <p className="text-sm text-slate-500">Your enquiry is sent through Sicada&apos;s existing project enquiry workflow.</p>
@@ -136,11 +136,11 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="bg-slate-950 text-white py-24 lg:py-28">
-        <div className="max-w-[1440px] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-14">
+      <section className="bg-slate-950 text-white py-14 sm:py-20 lg:py-28">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-6 lg:px-10 grid lg:grid-cols-12 gap-14">
           <div className="lg:col-span-5">
             <p className="text-sm font-semibold text-blue-400 uppercase tracking-wide">What happens next</p>
-            <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">A useful first conversation, not a sales script.</h2>
+            <h2 className="mt-5 text-[clamp(1.875rem,5vw,3rem)] lg:text-5xl font-semibold tracking-[-0.03em]">A useful first conversation, not a sales script.</h2>
           </div>
           <div className="lg:col-span-7 border border-white/10">
             {[
