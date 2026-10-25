@@ -65,20 +65,20 @@ export default function Home() {
   return (
     <main className="bg-white text-slate-950">
       <section className="border-b border-slate-200">
-        <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-20 lg:py-28">
-          <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-28">
+          <div className="grid lg:grid-cols-12 gap-9 lg:gap-16 items-center">
             <div className="lg:col-span-6">
               <p className="text-sm font-semibold text-blue-700 tracking-wide uppercase">AI-first software engineering</p>
-              <h1 className="mt-6 text-[3.2rem] sm:text-6xl lg:text-[4.7rem] leading-[1.02] tracking-[-0.045em] font-semibold max-w-4xl">Build what&apos;s next with AI.</h1>
-              <p className="mt-7 text-xl lg:text-[1.35rem] leading-relaxed text-slate-600 max-w-2xl">Sicada designs and engineers AI-powered applications, intelligent CRM and ERP platforms, machine-learning systems and AI-assisted cybersecurity solutions for modern enterprises.</p>
-              <div className="mt-10 flex flex-wrap gap-4">
-                <a href="/services" className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-7 py-4 font-semibold transition-colors">Explore AI solutions <ArrowRight size={18} /></a>
-                <a href="/contact" className="inline-flex items-center gap-3 border border-slate-400 hover:border-slate-950 px-7 py-4 font-semibold transition-colors">Talk to our team <ArrowRight size={18} /></a>
+              <h1 className="mt-5 text-[clamp(2.45rem,10vw,3.2rem)] sm:text-6xl lg:text-[4.7rem] leading-[1.02] tracking-[-0.045em] font-semibold max-w-4xl">Build what&apos;s next with AI.</h1>
+              <p className="mt-5 text-base sm:text-lg lg:text-[1.35rem] leading-relaxed text-slate-600 max-w-2xl">Sicada designs and engineers AI-powered applications, intelligent CRM and ERP platforms, machine-learning systems and AI-assisted cybersecurity solutions for modern enterprises.</p>
+              <div className="mt-7 sm:mt-10 flex flex-wrap gap-3 sm:gap-4">
+                <a href="/services" className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-5 sm:px-7 py-3.5 sm:py-4 font-semibold transition-colors">Explore AI solutions <ArrowRight size={18} /></a>
+                <a href="/contact" className="inline-flex items-center gap-3 border border-slate-400 hover:border-slate-950 px-5 sm:px-7 py-3.5 sm:py-4 font-semibold transition-colors">Talk to our team <ArrowRight size={18} /></a>
               </div>
             </div>
 
             <div className="lg:col-span-6">
-              <div className="bg-slate-950 text-white p-7 lg:p-9 border border-slate-800">
+              <div className="bg-slate-950 text-white p-5 sm:p-7 lg:p-9 border border-slate-800">
                 <div className="flex items-center justify-between border-b border-white/10 pb-6">
                   <div>
                     <p className="text-blue-400 text-xs uppercase tracking-[0.18em] font-semibold">Sicada intelligence architecture</p>
@@ -114,12 +114,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-24 lg:py-32">
+      <section className="py-14 sm:py-20 lg:py-32">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
-          <div className="grid lg:grid-cols-12 gap-12 border-b border-slate-200 pb-16">
+          <div className="grid lg:grid-cols-12 gap-7 lg:gap-12 border-b border-slate-200 pb-9 sm:pb-16">
             <div className="lg:col-span-4"><p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">What we engineer</p></div>
             <div className="lg:col-span-8">
-              <h2 className="text-4xl lg:text-6xl tracking-[-0.035em] leading-[1.08] font-semibold max-w-5xl">AI is not an add-on. It is becoming part of the software architecture.</h2>
+              <h2 className="text-3xl sm:text-4xl lg:text-6xl tracking-[-0.035em] leading-[1.08] font-semibold max-w-5xl">AI is not an add-on. It is becoming part of the software architecture.</h2>
               <p className="mt-7 text-xl text-slate-600 leading-relaxed max-w-3xl">We help organizations move from AI ideas to dependable products by combining software engineering, machine learning, LLM architecture, enterprise data and secure cloud infrastructure.</p>
             </div>
           </div>
@@ -138,11 +138,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="enterprise-ai" className="bg-slate-50 border-y border-slate-200 py-24 lg:py-32">
+      <section id="enterprise-ai" className="bg-slate-50 border-y border-slate-200 py-14 sm:py-20 lg:py-32">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-14">
           <div className="lg:col-span-5">
             <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Enterprise AI</p>
-            <h2 className="mt-5 text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-tight">Bring intelligence into the systems your business already runs on.</h2>
+            <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-tight">Bring intelligence into the systems your business already runs on.</h2>
             <p className="mt-6 text-lg text-slate-600 leading-relaxed">Modernize existing products or build new AI-native platforms without losing sight of reliability, security, usability and measurable business value.</p>
             <a href="/contact" className="mt-8 inline-flex items-center gap-2 text-blue-700 font-semibold">Discuss your AI roadmap <ArrowRight size={18} /></a>
           </div>
@@ -162,7 +162,7 @@ export default function Home() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-14 items-start">
           <div className="lg:col-span-5">
             <p className="text-sm font-semibold text-blue-400 uppercase tracking-wide">AI + Cybersecurity</p>
-            <h2 className="mt-5 text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-tight">Intelligence for modern security operations.</h2>
+            <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-tight">Intelligence for modern security operations.</h2>
             <p className="mt-6 text-lg text-slate-300 leading-relaxed">We engineer AI-assisted security capabilities that help teams identify unusual behavior, understand risk and accelerate investigation and response.</p>
           </div>
           <div className="lg:col-span-7 border border-white/10">
@@ -174,7 +174,7 @@ export default function Home() {
       <section className="py-24 lg:py-32 bg-white">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-12 gap-10 items-end">
-            <div className="lg:col-span-7"><p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Industries</p><h2 className="mt-5 text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">AI engineered around real industry workflows.</h2></div>
+            <div className="lg:col-span-7"><p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Industries</p><h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">AI engineered around real industry workflows.</h2></div>
             <div className="lg:col-span-5 lg:text-right"><a href="/industries" className="inline-flex items-center gap-2 text-blue-700 font-semibold">Explore industries <ArrowRight size={18} /></a></div>
           </div>
           <div className="mt-14 grid md:grid-cols-2 border-t border-l border-slate-200">
@@ -183,9 +183,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-slate-50 border-y border-slate-200 py-24 lg:py-32">
+      <section className="bg-slate-50 border-y border-slate-200 py-14 sm:py-20 lg:py-32">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-14">
-          <div className="lg:col-span-5"><p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Beyond the API</p><h2 className="mt-5 text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">AI engineering requires more than connecting a model.</h2></div>
+          <div className="lg:col-span-5"><p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Beyond the API</p><h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">AI engineering requires more than connecting a model.</h2></div>
           <div className="lg:col-span-7 grid sm:grid-cols-2 gap-x-10">
             {["Model selection & architecture", "RAG & enterprise knowledge", "Agent orchestration", "Machine-learning pipelines", "Evaluation & guardrails", "Data engineering", "Security & governance", "Cloud deployment & observability"].map((item) => <div key={item} className="flex gap-3 py-5 border-b border-slate-300"><CheckCircle2 className="text-blue-600 shrink-0 mt-0.5" size={20} /><span className="font-medium">{item}</span></div>)}
           </div>
@@ -195,7 +195,7 @@ export default function Home() {
       <section className="py-24 lg:py-32 bg-white">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
           <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">How we work</p>
-          <h2 className="mt-5 text-4xl lg:text-5xl font-semibold tracking-[-0.03em] max-w-3xl">From AI opportunity to production system.</h2>
+          <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] max-w-3xl">From AI opportunity to production system.</h2>
           <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 border-t border-l border-slate-200">
             {[["01", "Discover", "Understand the workflow, users, data and business outcome."], ["02", "Design", "Define architecture, model strategy, security and experience."], ["03", "Engineer", "Build, integrate, evaluate and harden the production system."], ["04", "Operate", "Deploy, observe, improve and scale with real usage."]].map(([number, title, text]) => <div key={title} className="p-8 border-r border-b border-slate-200 min-h-[250px]"><span className="text-sm text-blue-700 font-semibold">{number}</span><h3 className="mt-10 text-2xl font-semibold">{title}</h3><p className="mt-4 text-slate-600 leading-relaxed">{text}</p></div>)}
           </div>
@@ -204,7 +204,7 @@ export default function Home() {
 
       <section className="bg-blue-600 text-white">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-16 lg:py-20 grid lg:grid-cols-12 gap-8 items-center">
-          <div className="lg:col-span-8"><p className="text-blue-100 font-semibold text-sm uppercase tracking-wide">Build with Sicada</p><h2 className="mt-4 text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Have an AI product or transformation idea?</h2><p className="mt-4 text-lg text-blue-50 max-w-3xl">Talk to us about AI applications, intelligent CRM and ERP, machine learning, LLM systems or AI-assisted cybersecurity.</p></div>
+          <div className="lg:col-span-8"><p className="text-blue-100 font-semibold text-sm uppercase tracking-wide">Build with Sicada</p><h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Have an AI product or transformation idea?</h2><p className="mt-4 text-lg text-blue-50 max-w-3xl">Talk to us about AI applications, intelligent CRM and ERP, machine learning, LLM systems or AI-assisted cybersecurity.</p></div>
           <div className="lg:col-span-4 lg:text-right"><a href="/contact" className="inline-flex items-center gap-3 bg-white text-slate-950 px-7 py-4 font-semibold hover:bg-slate-100 transition-colors">Start a conversation <ArrowRight size={18} /></a></div>
         </div>
       </section>
