@@ -23,7 +23,7 @@ export default function About() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-20 lg:py-28 grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <div className="lg:col-span-7">
             <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">About Sicada Digital</p>
-            <h1 className="mt-6 text-5xl sm:text-6xl lg:text-[4.6rem] leading-[1.03] tracking-[-0.045em] font-semibold">
+            <h1 className="mt-6 text-[clamp(2.3rem,9.5vw,2.85rem)] sm:text-6xl lg:text-[4.6rem] leading-[1.03] tracking-[-0.045em] font-semibold">
               Engineering intelligent systems for modern enterprises.
             </h1>
             <p className="mt-7 text-xl lg:text-[1.3rem] text-slate-600 leading-relaxed max-w-3xl">
@@ -54,7 +54,7 @@ export default function About() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4">
             <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Who we are</p>
-            <h2 className="mt-5 text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-tight">A technology company built around intelligent software.</h2>
+            <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-tight">A technology company built around intelligent software.</h2>
           </div>
           <div className="lg:col-span-8 space-y-7 text-lg lg:text-xl text-slate-600 leading-relaxed max-w-4xl">
             <p>We help organizations identify where AI can create value, design the right architecture, and turn that strategy into dependable software used by real teams and customers.</p>
@@ -69,7 +69,7 @@ export default function About() {
           <div className="grid lg:grid-cols-12 gap-10 items-end">
             <div className="lg:col-span-7">
               <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Our direction</p>
-              <h2 className="mt-5 text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Build intelligence into the technology businesses already depend on.</h2>
+              <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Build intelligence into the technology businesses already depend on.</h2>
             </div>
             <p className="lg:col-span-5 text-lg text-slate-600 leading-relaxed">Our focus is not AI for its own sake. It is the practical use of AI, ML and LLMs to improve software, operations, customer experiences and security.</p>
           </div>
@@ -94,7 +94,7 @@ export default function About() {
           <div className="grid lg:grid-cols-12 gap-10">
             <div className="lg:col-span-5">
               <p className="text-sm font-semibold text-blue-400 uppercase tracking-wide">How we think</p>
-              <h2 className="mt-5 text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">AI should strengthen the system, not complicate it.</h2>
+              <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">AI should strengthen the system, not complicate it.</h2>
             </div>
             <div className="lg:col-span-7 grid sm:grid-cols-2 border-t border-l border-white/10">
               {[
@@ -118,7 +118,7 @@ export default function About() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
           <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Our principles</p>
           <div className="mt-5 grid lg:grid-cols-12 gap-10 items-end">
-            <h2 className="lg:col-span-7 text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">The standards behind how we design and build.</h2>
+            <h2 className="lg:col-span-7 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">The standards behind how we design and build.</h2>
             <p className="lg:col-span-5 text-lg text-slate-600 leading-relaxed">We want our work to remain understandable, secure and maintainable long after the first release.</p>
           </div>
 
@@ -138,7 +138,7 @@ export default function About() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
             <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Why Sicada</p>
-            <h2 className="mt-5 text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Built for companies that need more than an AI demo.</h2>
+            <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Built for companies that need more than an AI demo.</h2>
           </div>
           <div className="lg:col-span-7 divide-y divide-slate-300 border-y border-slate-300">
             {["AI and software engineering in one delivery team", "Enterprise CRM, ERP and workflow understanding", "Security-conscious architecture from the beginning", "Data, cloud and model integration experience", "Clear communication from discovery to operation", "Production mindset with long-term maintainability"].map((item) => (
@@ -155,7 +155,7 @@ export default function About() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-16 lg:py-20 grid lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-8">
             <p className="text-sm font-semibold text-blue-100 uppercase tracking-wide">Work with Sicada</p>
-            <h2 className="mt-4 text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Building an AI-powered product or modernizing an existing system?</h2>
+            <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Building an AI-powered product or modernizing an existing system?</h2>
             <p className="mt-4 text-lg text-blue-50 max-w-3xl">We can help shape the opportunity, architecture and engineering path from first concept to production.</p>
           </div>
           <div className="lg:col-span-4 lg:text-right">
