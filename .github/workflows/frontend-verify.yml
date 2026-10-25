@@ -8,6 +8,7 @@ on:
       - 'package-lock.json'
       - 'wrangler.jsonc'
       - 'public/**'
+      - 'tests/**'
       - '.github/workflows/frontend-verify.yml'
   workflow_dispatch:
 jobs:
@@ -20,6 +21,7 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci
+      - run: node --test tests/*.test.js
       - run: npm run build
       - run: test -f dist/index.html
       - name: Validate Cloudflare Worker bundle
