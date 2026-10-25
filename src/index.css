@@ -102,3 +102,35 @@ textarea:focus-visible {
     scroll-behavior: auto !important;
   }
 }
+
+/* Sicada typography system: keep desktop scale, improve small-screen reading. */
+@media (max-width: 639px) {
+  main h1 {
+    font-size: clamp(2.3rem, 9.5vw, 2.85rem);
+    line-height: 1.09;
+    letter-spacing: -0.035em !important;
+    overflow-wrap: break-word;
+  }
+
+  main p {
+    line-height: 1.65;
+  }
+
+  main h2,
+  main h3 {
+    overflow-wrap: break-word;
+  }
+
+  main section > div > div > p.text-xl,
+  main section > div > p.text-xl {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  main h1 {
+    font-size: clamp(3rem, 6.5vw, 4rem);
+    line-height: 1.08;
+  }
+}
