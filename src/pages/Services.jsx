@@ -49,7 +49,7 @@ export default function Services() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-20 lg:py-28 grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-8">
             <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">AI solutions & engineering</p>
-            <h1 className="mt-6 text-5xl sm:text-6xl lg:text-[4.7rem] leading-[1.03] tracking-[-0.045em] font-semibold">
+            <h1 className="mt-6 text-[clamp(2.3rem,9.5vw,2.85rem)] sm:text-6xl lg:text-[4.7rem] leading-[1.03] tracking-[-0.045em] font-semibold">
               Engineer intelligence into your business.
             </h1>
             <p className="mt-7 text-xl lg:text-[1.3rem] leading-relaxed text-slate-600 max-w-3xl">
@@ -76,7 +76,7 @@ export default function Services() {
           <div className="grid lg:grid-cols-12 gap-10">
             <div className="lg:col-span-4">
               <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">AI engineering</p>
-              <h2 className="mt-5 text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-tight">From models to production systems.</h2>
+              <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-tight">From models to production systems.</h2>
             </div>
             <div className="lg:col-span-8">
               <p className="text-xl text-slate-600 leading-relaxed max-w-3xl">We combine model capabilities with software architecture, enterprise data, security, evaluation and human-centered product design.</p>
@@ -99,7 +99,7 @@ export default function Services() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
           <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">AI CRM & ERP</p>
           <div className="mt-5 grid lg:grid-cols-12 gap-10 items-end">
-            <h2 className="lg:col-span-7 text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Enterprise systems designed to make better decisions.</h2>
+            <h2 className="lg:col-span-7 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Enterprise systems designed to make better decisions.</h2>
             <p className="lg:col-span-5 text-lg text-slate-600 leading-relaxed">Sicada can build new intelligent platforms or integrate AI capabilities into the systems an organization already depends on.</p>
           </div>
 
@@ -124,7 +124,7 @@ export default function Services() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-14">
           <div className="lg:col-span-5">
             <p className="text-sm font-semibold text-blue-400 uppercase tracking-wide">AI cybersecurity</p>
-            <h2 className="mt-5 text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-tight">Security systems that can help teams see more and respond faster.</h2>
+            <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-tight">Security systems that can help teams see more and respond faster.</h2>
             <p className="mt-6 text-lg text-slate-300 leading-relaxed">AI can augment security teams by identifying patterns across high-volume signals, prioritizing investigation and assisting controlled response workflows.</p>
             <a href="/contact" className="mt-8 inline-flex items-center gap-2 text-blue-400 font-semibold">Discuss security engineering <ArrowRight size={18} /></a>
           </div>
@@ -149,7 +149,7 @@ export default function Services() {
           <div className="grid lg:grid-cols-12 gap-10">
             <div className="lg:col-span-5">
               <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Engineering foundation</p>
-              <h2 className="mt-5 text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">AI backed by serious software engineering.</h2>
+              <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">AI backed by serious software engineering.</h2>
             </div>
             <div className="lg:col-span-7 grid sm:grid-cols-2 border-t border-l border-slate-200">
               {engineering.map(([Icon, title, text]) => (
@@ -167,7 +167,7 @@ export default function Services() {
       <section className="bg-slate-50 border-y border-slate-200 py-24 lg:py-32">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
           <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Delivery model</p>
-          <h2 className="mt-5 text-4xl lg:text-5xl font-semibold tracking-[-0.03em] max-w-4xl">A disciplined path from business problem to production AI.</h2>
+          <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] max-w-4xl">A disciplined path from business problem to production AI.</h2>
           <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 border-t border-l border-slate-300">
             {[
               ["01", "Discover", "Business outcome, workflow, data, constraints and success criteria."],
@@ -188,7 +188,7 @@ export default function Services() {
       <section className="bg-blue-600 text-white">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-16 lg:py-20 grid lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-8">
-            <h2 className="text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Where could AI create an advantage in your business?</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Where could AI create an advantage in your business?</h2>
             <p className="mt-4 text-lg text-blue-50 max-w-3xl">We can help define the opportunity, architecture and path to a dependable production system.</p>
           </div>
           <div className="lg:col-span-4 lg:text-right">
