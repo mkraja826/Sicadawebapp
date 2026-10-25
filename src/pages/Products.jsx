@@ -248,15 +248,15 @@ export default function Products() {
     <main className="min-h-screen bg-white text-slate-950">
       {/* Hero Section */}
       <section className="border-b border-slate-200 bg-gradient-to-b from-slate-50 to-white">
-        <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-20 lg:py-28">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-28">
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 text-blue-700 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider">
               <Sparkles size={14} /> Sicada Digital Products
             </div>
-            <h1 className="mt-6 text-5xl sm:text-6xl lg:text-[4.25rem] leading-[1.05] tracking-[-0.04em] font-semibold text-slate-950">
+            <h1 className="mt-6 text-[clamp(2.25rem,9vw,3.2rem)] sm:text-6xl lg:text-[4.25rem] leading-[1.05] tracking-[-0.04em] font-semibold text-slate-950">
               Production software systems built with intelligence at their core.
             </h1>
-            <p className="mt-7 text-xl text-slate-600 leading-relaxed max-w-3xl">
+            <p className="mt-7 text-base sm:text-lg lg:text-xl text-slate-600 leading-relaxed max-w-3xl">
               From full-stack MLOps fine-tuning and on-device edge execution with BYOI to autonomous clinical documentation systems, Sicada engineers platforms that give organizations complete data sovereignty and operational efficiency.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
@@ -304,8 +304,8 @@ export default function Products() {
       </section>
 
       {/* DETAILED MLOPS SECTION: BYOI (Build Your Own Intelligence) */}
-      <section id="byoi-mlops" className="py-24 lg:py-32 border-b border-slate-200 bg-slate-950 text-white">
-        <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
+      <section id="byoi-mlops" className="py-14 sm:py-20 lg:py-32 border-b border-slate-200 bg-slate-950 text-white">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-6 lg:px-10">
           <div className="grid lg:grid-cols-12 gap-12 items-end mb-16">
             <div className="lg:col-span-8">
               <div className="inline-flex items-center gap-2 bg-blue-900/60 border border-blue-700 text-blue-300 px-3 py-1 text-xs font-bold uppercase tracking-wider">
@@ -319,7 +319,7 @@ export default function Products() {
               </p>
             </div>
             <div className="lg:col-span-4 lg:text-right">
-              <div className="inline-flex rounded-lg border border-white/10 p-1 bg-slate-900 text-sm font-medium">
+              <div className="flex flex-wrap justify-start lg:justify-end gap-1 rounded-lg border border-white/10 p-1 bg-slate-900 text-sm font-medium max-w-full">
                 <button
                   onClick={() => setByoiSubTab("pipeline")}
                   className={`px-4 py-2 transition-colors ${
@@ -623,8 +623,8 @@ SYSTEM """You are a specialized enterprise intelligence trained via BYOI."""`}</
       </section>
 
       {/* Flagship Technical Product: Medical Documentation & Clinical Intelligence Platform */}
-      <section id="medical-documentation-platform" className="py-24 lg:py-32 border-b border-slate-200">
-        <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
+      <section id="medical-documentation-platform" className="py-14 sm:py-20 lg:py-32 border-b border-slate-200">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-6 lg:px-10">
           <div className="grid lg:grid-cols-12 gap-12 items-end mb-16">
             <div className="lg:col-span-8">
               <span className="text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-50 border border-blue-200 px-3 py-1">
@@ -824,8 +824,8 @@ SYSTEM """You are a specialized enterprise intelligence trained via BYOI."""`}</
       </section>
 
       {/* Technical Architecture Deep-Dive */}
-      <section id="architecture" className="py-24 lg:py-32 bg-slate-950 text-white">
-        <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
+      <section id="architecture" className="py-14 sm:py-20 lg:py-32 bg-slate-950 text-white">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-6 lg:px-10">
           <div className="max-w-3xl mb-16">
             <span className="text-xs font-bold uppercase tracking-wider text-blue-400 bg-blue-950/60 border border-blue-800 px-3 py-1">
               Engineering Deep Dive
@@ -884,8 +884,8 @@ SYSTEM """You are a specialized enterprise intelligence trained via BYOI."""`}</
       </section>
 
       {/* Natural Language RAG & Search Showcase */}
-      <section className="py-24 lg:py-32 border-b border-slate-200 bg-white">
-        <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
+      <section className="py-14 sm:py-20 lg:py-32 border-b border-slate-200 bg-white">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-6 lg:px-10">
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-6">
               <span className="text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-50 border border-blue-200 px-3 py-1">
@@ -953,8 +953,8 @@ SYSTEM """You are a specialized enterprise intelligence trained via BYOI."""`}</
       </section>
 
       {/* Companion Products from Sicada Digital */}
-      <section className="py-24 lg:py-32 bg-slate-50 border-b border-slate-200">
-        <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
+      <section className="py-14 sm:py-20 lg:py-32 bg-slate-50 border-b border-slate-200">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-6 lg:px-10">
           <div className="max-w-3xl mb-16">
             <span className="text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-50 border border-blue-200 px-3 py-1">
               Complementary Enterprise Products
@@ -994,7 +994,7 @@ SYSTEM """You are a specialized enterprise intelligence trained via BYOI."""`}</
 
       {/* CTA Section */}
       <section className="bg-slate-950 text-white py-24 lg:py-28">
-        <div className="max-w-[1440px] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-10 items-center">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-6 lg:px-10 grid lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-8">
             <h2 className="text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">
               Interested in deploying or piloting our products?
