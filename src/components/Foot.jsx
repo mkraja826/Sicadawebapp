@@ -32,7 +32,7 @@ function Foot() {
           </div>
 
           <div className="lg:col-span-2">
-            <h4 className="text-white font-semibold mb-5">AI Solutions</h4>
+            <h3 className="text-white font-semibold mb-5">AI Solutions</h3>
             <ul className="space-y-3 text-slate-400 text-sm">
               {aiLinks.map(([label, href]) => (
                 <li key={label}><a href={href} className="hover:text-white transition-colors">{label}</a></li>
@@ -41,7 +41,7 @@ function Foot() {
           </div>
 
           <div className="lg:col-span-2">
-            <h4 className="text-white font-semibold mb-5">Engineering</h4>
+            <h3 className="text-white font-semibold mb-5">Engineering</h3>
             <ul className="space-y-3 text-slate-400 text-sm">
               {engineeringLinks.map(([label, href]) => (
                 <li key={label}><a href={href} className="hover:text-white transition-colors">{label}</a></li>
@@ -50,7 +50,7 @@ function Foot() {
           </div>
 
           <div className="lg:col-span-2">
-            <h4 className="text-white font-semibold mb-5">Company</h4>
+            <h3 className="text-white font-semibold mb-5">Company</h3>
             <ul className="space-y-3 text-slate-400 text-sm">
               <li><a href="/products" className="hover:text-white transition-colors">Products</a></li>
               <li><a href="/case-studies" className="hover:text-white transition-colors">Case Studies</a></li>
@@ -62,7 +62,7 @@ function Foot() {
           </div>
 
           <div className="lg:col-span-2">
-            <h4 className="text-white font-semibold mb-5">Contact</h4>
+            <h3 className="text-white font-semibold mb-5">Contact</h3>
             <ul className="space-y-5 text-slate-400 text-sm">
               <li className="flex gap-3">
                 <Mail className="text-blue-400 mt-0.5 shrink-0" size={17} />
