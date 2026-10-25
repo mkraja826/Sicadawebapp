@@ -1,0 +1,89 @@
+name: Extract Sicada source and verify Workers build
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/extract-sicada.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract-and-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Extract missing source files safely
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          import re
+          archive = Path("Sicada-main.zip")
+          if not archive.is_file():
+              raise SystemExit("Sicada-main.zip not found in repository root")
+          added = []
+          with ZipFile(archive) as z:
+              for entry in z.infolist():
+                  if entry.is_dir():
+                      continue
+                  name = entry.filename
+                  if not name.startswith("Sicada-main/"):
+                      continue
+                  rel = name[len("Sicada-main/"):]
+                  parts = Path(rel).parts
+                  if not parts or ".." in parts or Path(rel).is_absolute():
+                      continue
+                  low = rel.lower()
+                  if (".wrangler" in parts or ".git" in parts
+                      or low.endswith("backup codes.pdf")
+                      or any(p.startswith(".env") for p in parts)
+                      or any(re.search(r"(secret|credential|private.key|\.pem$|\.p12$)", p, re.I) for p in parts)
+                      or rel.startswith(".github/workflows/")):
+                      continue
+                  dest = Path(rel)
+                  if dest.exists():
+                      continue
+                  dest.parent.mkdir(parents=True, exist_ok=True)
+                  dest.write_bytes(z.read(entry))
+                  added.append(rel)
+          print(f"Extracted {len(added)} missing source files")
+          print("\n".join(added))
+          PY
+      - name: Configure existing Cloudflare Worker static assets
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path("wrangler.jsonc")
+          data=json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+          data.pop("pages_build_output_dir",None)
+          data["name"]="sicadawebapp"
+          data["compatibility_date"]=data.get("compatibility_date","2026-10-25")
+          data["assets"]={"directory":"./dist","not_found_handling":"single-page-application"}
+          p.write_text(json.dumps(data,indent=2)+"\n",encoding="utf-8")
+          PY
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Build Vite application
+        run: npm run build
+      - name: Validate Wrangler configuration
+        run: npx --yes wrangler@4 deploy --dry-run
+      - name: Commit extracted source and Worker configuration to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git reset -q -- dist node_modules .wrangler 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Extract Sicada application source and configure Workers assets"
+            git push origin HEAD:main
+          fi
