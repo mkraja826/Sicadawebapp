@@ -42,7 +42,7 @@ export default function CaseStudies() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-20 lg:py-28 grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-8">
             <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Case studies</p>
-            <h1 className="mt-6 text-5xl sm:text-6xl lg:text-[4.5rem] leading-[1.03] tracking-[-0.045em] font-semibold">How AI can become part of real enterprise systems.</h1>
+            <h1 className="mt-6 text-[clamp(2.3rem,9.5vw,2.85rem)] sm:text-6xl lg:text-[4.5rem] leading-[1.03] tracking-[-0.045em] font-semibold">How AI can become part of real enterprise systems.</h1>
             <p className="mt-7 text-xl text-slate-600 leading-relaxed max-w-3xl">These solution studies illustrate Sicada&apos;s engineering approach across AI applications, CRM, ERP and cybersecurity. They are architecture examples—not claims about unnamed clients or invented results.</p>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function CaseStudies() {
 
       <section className="bg-slate-950 text-white py-24 lg:py-28">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-10 items-center">
-          <div className="lg:col-span-8"><h2 className="text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Have a real project we can turn into the next case study?</h2><p className="mt-5 text-lg text-slate-300 max-w-3xl">Once real client outcomes are approved for publication, these architecture studies can be replaced or supplemented with verified project stories.</p></div>
+          <div className="lg:col-span-8"><h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Have a real project we can turn into the next case study?</h2><p className="mt-5 text-lg text-slate-300 max-w-3xl">Once real client outcomes are approved for publication, these architecture studies can be replaced or supplemented with verified project stories.</p></div>
           <div className="lg:col-span-4 lg:text-right"><a href="/contact" className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 px-7 py-4 font-semibold">Discuss your project <ArrowRight size={18} /></a></div>
         </div>
       </section>
