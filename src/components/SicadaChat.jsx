@@ -95,7 +95,7 @@ export default function SicadaChat() {
   return (
     <>
       {open && (
-        <section className="fixed z-[70] inset-x-3 bottom-20 sm:inset-auto sm:right-6 sm:bottom-24 sm:w-[430px] h-[min(680px,calc(100dvh-7rem))] bg-white border border-slate-200 shadow-[0_24px_70px_rgba(15,23,42,0.22)] rounded-2xl overflow-hidden flex flex-col" aria-label="Sicada AI assistant">
+        <section id="sicada-ai-panel" className="fixed z-[70] inset-x-3 bottom-[calc(5rem+env(safe-area-inset-bottom))] sm:inset-auto sm:right-6 sm:bottom-24 sm:w-[430px] h-[min(680px,calc(100dvh-8rem-env(safe-area-inset-bottom)))] bg-white border border-slate-200 shadow-[0_24px_70px_rgba(15,23,42,0.22)] rounded-2xl overflow-hidden flex flex-col" aria-label="Sicada AI assistant">
           <header className="relative px-5 py-4 bg-slate-950 text-white border-b border-white/10">
             <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-400/80 to-transparent" />
             <div className="flex items-center justify-between gap-4">
@@ -185,9 +185,9 @@ export default function SicadaChat() {
         </section>
       )}
 
-      <button type="button" onClick={() => setOpen((value) => !value)} className="fixed z-[70] bottom-5 right-4 sm:right-6 group rounded-full bg-slate-950 hover:bg-slate-900 text-white h-13 min-h-[52px] px-4 shadow-[0_12px_35px_rgba(15,23,42,0.28)] flex items-center gap-3 border border-slate-800 transition-all hover:-translate-y-0.5" aria-label={open ? "Close Sicada AI" : "Open Sicada AI"} aria-expanded={open}>
+      <button type="button" onClick={() => setOpen((value) => !value)} className="fixed z-[70] bottom-[calc(1rem+env(safe-area-inset-bottom))] right-4 sm:bottom-5 sm:right-6 group rounded-full bg-slate-950 hover:bg-slate-900 text-white h-13 min-h-[52px] px-4 shadow-[0_12px_35px_rgba(15,23,42,0.28)] flex items-center gap-3 border border-slate-800 transition-all hover:-translate-y-0.5" aria-label={open ? "Close Sicada AI" : "Open Sicada AI"} aria-expanded={open}>
         <span className="relative w-8 h-8 rounded-full bg-blue-500/10 flex items-center justify-center"><MessageSquareText size={17} className="text-blue-400" /><span className="absolute top-0 right-0 w-2 h-2 rounded-full bg-emerald-400 border-2 border-slate-950" /></span>
-        <span className="text-sm font-semibold pr-1">Ask Sicada AI</span>
+        <span className="hidden sm:inline text-sm font-semibold pr-1">Ask Sicada AI</span>
       </button>
     </>
   );
