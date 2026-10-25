@@ -74,7 +74,7 @@ export default function Careers() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-20 lg:py-28 grid lg:grid-cols-12 gap-14 items-end">
           <div className="lg:col-span-8">
             <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Careers at Sicada</p>
-            <h1 className="mt-6 text-5xl sm:text-6xl lg:text-[4.7rem] leading-[1.03] tracking-[-0.045em] font-semibold max-w-5xl">
+            <h1 className="mt-6 text-[clamp(2.3rem,9.5vw,2.85rem)] sm:text-6xl lg:text-[4.7rem] leading-[1.03] tracking-[-0.045em] font-semibold max-w-5xl">
               Build the intelligence layer of tomorrow&apos;s software.
             </h1>
             <p className="mt-7 text-xl lg:text-[1.3rem] leading-relaxed text-slate-600 max-w-3xl">
@@ -100,7 +100,7 @@ export default function Careers() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-14">
           <div className="lg:col-span-5">
             <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Engineering culture</p>
-            <h2 className="mt-5 text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-tight">Curiosity matters. Engineering discipline matters more.</h2>
+            <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-tight">Curiosity matters. Engineering discipline matters more.</h2>
           </div>
           <div className="lg:col-span-7">
             <p className="text-xl text-slate-600 leading-relaxed">AI moves quickly. Our work requires people who enjoy learning while still caring deeply about fundamentals: users, data, architecture, security, testing and production reliability.</p>
@@ -127,7 +127,7 @@ export default function Careers() {
           <div className="grid lg:grid-cols-12 gap-10 items-end">
             <div className="lg:col-span-7">
               <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Opportunities</p>
-              <h2 className="mt-5 text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Engineering roles across the AI stack.</h2>
+              <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Engineering roles across the AI stack.</h2>
             </div>
             <p className="lg:col-span-5 text-lg text-slate-600 leading-relaxed">Roles shown here represent the disciplines Sicada works across. Availability may vary; you can also submit a general application.</p>
           </div>
@@ -149,7 +149,7 @@ export default function Careers() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-14">
           <div className="lg:col-span-5">
             <p className="text-sm font-semibold text-blue-400 uppercase tracking-wide">The work</p>
-            <h2 className="mt-5 text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-tight">Work on AI as a system, not just a model.</h2>
+            <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-tight">Work on AI as a system, not just a model.</h2>
             <p className="mt-6 text-lg text-slate-300 leading-relaxed">Teams can work across the full path from product problem and data to model behavior, software experience, deployment and continuous improvement.</p>
           </div>
           <div className="lg:col-span-7 border border-white/10">
@@ -166,7 +166,7 @@ export default function Careers() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-14">
           <div className="lg:col-span-4">
             <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide">Apply</p>
-            <h2 className="mt-5 text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Tell us what you&apos;re good at.</h2>
+            <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Tell us what you&apos;re good at.</h2>
             <p className="mt-6 text-lg text-slate-600 leading-relaxed">Share your experience, the discipline you&apos;re interested in and a public resume link. The existing application workflow remains connected to Sicada&apos;s recruitment backend.</p>
           </div>
 
@@ -192,7 +192,7 @@ export default function Careers() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-16 lg:py-20 grid lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-8">
             <div className="flex items-center gap-3 text-blue-100"><Users size={22} /><span className="text-sm uppercase tracking-wide font-semibold">Build with us</span></div>
-            <h2 className="mt-4 text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Interested in where AI engineering is going next?</h2>
+            <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.03em]">Interested in where AI engineering is going next?</h2>
           </div>
           <div className="lg:col-span-4 lg:text-right"><a href="#apply" className="inline-flex items-center gap-3 bg-white text-slate-950 px-7 py-4 font-semibold hover:bg-slate-100">Submit your profile <ArrowRight size={18} /></a></div>
         </div>
