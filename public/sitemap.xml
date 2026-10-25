@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://sicadadigital.com/</loc>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://sicadadigital.com/</loc></url>
+  <url><loc>https://sicadadigital.com/products</loc></url>
+  <url><loc>https://sicadadigital.com/services</loc></url>
+  <url><loc>https://sicadadigital.com/industries</loc></url>
+  <url><loc>https://sicadadigital.com/case-studies</loc></url>
+  <url><loc>https://sicadadigital.com/insights</loc></url>
+  <url><loc>https://sicadadigital.com/about</loc></url>
+  <url><loc>https://sicadadigital.com/careers</loc></url>
+  <url><loc>https://sicadadigital.com/contact</loc></url>
 </urlset>
